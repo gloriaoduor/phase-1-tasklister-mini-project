@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let form = document.getElementById('create-task-form')
+  let form = document.getElementById('taskForm')
   form.addEventListener('submit', (e)=>{
     e.preventDefault()
     listToDo(e.target.new_task_description.value)
@@ -26,7 +26,7 @@ function listToDo(todo){
   document.getElementById('tasks').appendChild(li)
 }
 
-//deletes the task when user clicks the button
+//deletes the task 
 function deleteTodo(e){
   e.target.parentNode.remove()
 }
