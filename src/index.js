@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function listToDo(todo){
   //create a list of tasks entered by user
   let li = document.createElement('li')
-
+  document
   //creates and adds a delete button to the each task 
   let deleteBtn = document.createElement('button')
   deleteBtn.textContent = ' x '
